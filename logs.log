@@ -1,0 +1,37 @@
+1791 [main] INFO  com.example.demo.DemoApplication - Starting DemoApplication using Java 1.8.0_362 on adminv-Aspire-V3-574G with PID 12989 (/home/admin-v/Downloads/demo-project/demo/target/classes started by admin-v in /home/admin-v/Downloads/demo-project)
+1795 [main] INFO  com.example.demo.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+3698 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8091 (http)
+3961 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+3961 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.76]
+4696 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+4697 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2814 ms
+5185 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+5343 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 3 mappings in 'requestMappingHandlerMapping'
+5379 [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+5394 [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+5547 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8091 (http) with context path ''
+5564 [main] INFO  com.example.demo.DemoApplication - Started DemoApplication in 4.671 seconds (JVM running for 6.052)
+30039 [http-nio-8091-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+30040 [http-nio-8091-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+30042 [http-nio-8091-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+30042 [http-nio-8091-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+30042 [http-nio-8091-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+30043 [http-nio-8091-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@70e457f5
+30044 [http-nio-8091-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@3cade3ba
+30045 [http-nio-8091-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+30045 [http-nio-8091-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+30300 [http-nio-8091-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/testendpoint/true", parameters={}
+30340 [http-nio-8091-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.demo.TestResource#testFunc(String)
+30601 [http-nio-8091-exec-1] INFO  com.example.demo.TestResource - test api success fully executed
+30766 [http-nio-8091-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'text/html', given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+30767 [http-nio-8091-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing ["Success"]
+30791 [http-nio-8091-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+31966 [http-nio-8091-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/favicon.ico", parameters={}
+31973 [http-nio-8091-exec-2] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+31975 [http-nio-8091-exec-2] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+31976 [http-nio-8091-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+31980 [http-nio-8091-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+31982 [http-nio-8091-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+31999 [http-nio-8091-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json;q=0.8', given [image/webp, image/apng, image/*, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+32000 [http-nio-8091-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Thu Sep 21 17:44:41 IST 2023, status=404, error=Not Found, path=/favicon.ico}]
+32082 [http-nio-8091-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
